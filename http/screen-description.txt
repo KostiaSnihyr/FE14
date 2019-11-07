@@ -1,0 +1,30 @@
+в средмнем окне представлены протоколы разных уровней:
+Frame 302: 642 bytes on wire (5136 bits), 642 bytes captured (5136 bits) on interface 0
+- физический уровень
+
+Ethernet II, Src: Apple_9e:31:7a (78:4f:43:9e:31:7a), Dst: AsustekC_67:19:61 (00:18:f3:67:19:61)
+- протокол канального уровня
+
+Internet Protocol Version 4, Src: 192.168.117.46, Dst: 128.119.245.12
+- протокол сетевого уровня
+
+Transmission Control Protocol, Src Port: 52728, Dst Port: 80, Seq: 1, Ack: 1, Len: 576
+- транспортного
+
+Hypertext Transfer Protocol
+- прикладного
+
+В нижнем окне представлены данные пакетов в том виде в котором они передаются по сети
+
+
+Используется GET запрос
+Используется протокол HTTP/1.1
+Имя домена Host: gaia.cs.umass.edu\r\n
+Соединение: keep-alive
+Accept-Language: en-US,en;q=0.9\r\n
+Accept-Encoding: gzip, deflate\r\n
+[Full request URI: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html]
+Internet Protocol Version 4, Src: 192.168.117.46, Dst: 128.119.245.12
+мы можем посмотреть
+IP адрес отправителя - Source: 192.168.117.46
+IP адрес получателя - Destination: 128.119.245.12
