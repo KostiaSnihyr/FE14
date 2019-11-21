@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    margin: 0 auto;
+
+    display: inline-block;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    padding: 20px;
+    font-size: 30px;
+}
