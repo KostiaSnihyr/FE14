@@ -19,7 +19,7 @@ header {
     font-size: 2em;
 }
 
-.photo__caption, h1, h2, h3, details, figcaption {
+.photo__caption, h1, h2, h3, details, figcaption, .template-section p {
     text-align: center;
 }
 

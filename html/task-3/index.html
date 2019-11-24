@@ -47,11 +47,11 @@
                         <li>
                             <section>
                                 <h3>
-                                    source, video, track tags
+                                    1) source, video, track tags
                                 </h3>
                                 <video autoplay="autoplay" controls>
                                     <source src="videos/friday.mp4" type="video/mp4">
-                                    <track default kind="captions" srclang="en" src="/videos/subtitle.vtt"/>/>
+                                    <!-- <track default kind="captions" srclang="en" src="/videos/subtitle.vtt"/> -->
                                         Your browser does not support mp4 videos, change browser!
                                 </video>
                             </section>
@@ -60,7 +60,7 @@
                         <li>
                             <section>
                                 <h3>
-                                    tedails, summary tags
+                                    2) tedails, summary tags
                                 </h3>
                                 <details>
                                     <summary>author info</summary>
@@ -72,16 +72,42 @@
                         <li>
                             <section>
                                 <h3>
-                                    audio tag
+                                    3) audio tag
                                 </h3>
                                 <audio controls preload="metadata">
-                                    <source src="/audio/t-rex-roar.mp3" type="audio/mp3"/>
+                                    <source src="audio/t-rex-roar.mp3" type="audio/mp3"/>
                                 </audio>
+                            </section>
+                        </li>
+
+                        <li>
+                            <section class="template-section">
+                                <h3>
+                                    4) template, wbr tags
+                                </h3>
+                                <p>
+                                    Paragraph above the template very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>very<wbr>long<wbr>paragraph
+                                </p>
+                                <p id="p-for-template">
+                                    
+                                </p>
+                                <template id="myTemplate">
+                                    <div class="box">
+                                        <p>Template paragraph</p>
+                                    </div>
+                                </template>
+                                <p>
+                                    Paragraph below the template
+                                </p>
                             </section>
                         </li>
                     </ul>
     
                 </article>
+                <aside>
+                    <bdj>sadf</bdj>
+                    I m'aside
+                </aside>
             </div>
 
             <section>
@@ -148,5 +174,7 @@
             </section>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
