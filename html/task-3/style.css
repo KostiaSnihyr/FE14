@@ -27,7 +27,7 @@ header {
     margin-bottom: 30px;
 }
 
-.photo__img, video, audio, canvas {
+.photo__img, video, audio, canvas, picture {
     display: block;
     margin: 0 auto;
     width: 300px;
