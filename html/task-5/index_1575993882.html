@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi Level Dropdown</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="icon ion-md-menu"></i>
+                    <i class="icon ion-md-close"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-camera"></i>
+                </a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">Dropdown Menu
+                            <i class="icon ion-md-arrow-dropdown"></i>
+                        </a>
+                        <ul class="sub-menu first-sub-menu">
+                            <li>
+                                <a href="#">lvl-1</a>
+                            </li>
+                            <li>
+                                <a href="#">lvl-1
+                                    <i class="icon ion-md-arrow-dropdown"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">lvl-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">lvl-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">lvl-2
+                                            <i class="icon ion-md-arrow-dropdown"></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">lvl-3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">lvl-3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">lvl-3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">lvl-1</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Advantages</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="container carousel-container">
+                <h2 class=section-header id="services">Services</h2>
+                <input type="radio" name="images" id="i1" checked>
+                <input type="radio" name="images" id="i2">
+                <input type="radio" name="images" id="i3">
+                <ul>
+                    <li class="slide slide-1">
+                        <article>
+                            <h4>Business headshots</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minus.</p>
+                        </article>
+                    </li>
+                    <li class="slide slide-2">
+                        <article>
+                            <h4>Product photography</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minus.</p>
+                        </article>
+                    </li>
+                    <li class="slide slide-3">
+                        <article>
+                            <h4>Event Photography</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minus.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <div class="carousel-nav">
+                            <label for="i1" class="dots" id="dot1"></label>
+                            <label for="i2" class="dots" id="dot2"></label>
+                            <label for="i3" class="dots" id="dot3"></label>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
