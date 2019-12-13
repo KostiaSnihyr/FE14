@@ -1,17 +1,3 @@
-.wrapper {
-    margin: auto;
-    width: 1280px;
-    height: 955px;
-    display: grid;
-    /* grid-template-columns: 120px 521px 521px 120px; */
-    grid-template-columns: 120px 1fr 1fr 120px;
-    grid-template-rows: 90px 700px 170px;
-    background: url('../small-icons/back-big.png') no-repeat 0 0/100% 100%;
-}
-.box {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
 .box-left {
     display: grid;
     grid-template-rows: 40px 75px 17px 475px 15px 55px;

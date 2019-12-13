@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Diablo";
+    src: url("../fonts/DiabloLight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+   }
+.wrapper {
+    margin: auto;
+    position: relative;
+    width: 1280px;
+    height: 955px;
+    display: grid;
+    /* grid-template-columns: 120px 521px 521px 120px; */
+    grid-template-columns: 120px 1fr 1fr 120px;
+    grid-template-rows: 90px 700px 170px;
+    background: url('../small-icons/back-big.png') no-repeat 0 0/100% 100%;
+}
+.box {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}

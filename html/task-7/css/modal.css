@@ -1,0 +1,21 @@
+.modal {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    color: #ffffff;
+    padding-right: 10px;
+    font-family: Diablo, cursive;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.yellow {
+    color: #b7b59e;
+}
+.white {
+    color: #dcd8d5;
+}
+.purple {
+    color: #69609f;
+}
