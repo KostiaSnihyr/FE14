@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    background-color: rgb(27, 26, 49);
     /* overflow: hidden; */
     /* overflow-y: scroll; */
 }
@@ -27,6 +28,12 @@ a {
 
 ul {
     list-style: none;
+}
+
+h2 {
+    padding: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
 }
 
 header {
@@ -280,9 +287,9 @@ nav {
     background-image: url('img/event-ConvertImage.jpg');
 }
 
-/* #i1, #i2, #i3 {
+#i1, #i2, #i3 {
     display: none;
-} */
+}
 
 .carousel li:last-child {
     width: 100%;
@@ -318,4 +325,123 @@ nav {
 
 .map {
     width: 300px;
+}
+
+/* team section */
+
+.expert-team .container {
+    display: flex;
+}
+
+.team-member {
+    width: 25%;
+    margin: 5px;
+    text-align: center;
+    background: rgb(204, 200, 200);
+}
+
+.team-member img {
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.team-member p {
+    font-size: 2rem;
+}
+
+.team-member ul {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+
+.team-member ul li {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .expert-team .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team-member {
+        width: 45%;
+        margin: 5px;
+        text-align: center;
+        background: rgb(204, 200, 200);
+        align-content: center;
+    }
+}
+
+/* advantages section */
+
+.advantages .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.advantage {
+    max-width: 33%;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    background: rgb(204, 200, 200);
+}
+
+.advantage > div {
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .advantage {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .advantage {
+        max-width: 100%;
+    }
+}
+
+.advantage > div {
+    color: #00A86B;
+    background-color: rgb(27, 26, 49);
+}
+
+.coordinates {
+    padding: 0.5rem;
+}
+
+/* contacts section */
+
+.contact-details {
+    font-size: 2rem;
+    color: #fff
+}
+
+.contact-details a {
+    list-style: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-details a i {
+    list-style: none;
+    color: #fff;
+    font-size: 3rem;
+    margin: 1rem 4rem 1rem 1rem;
+    width: 1rem;
+}
+
+/* contacts section */
+
+.footer {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
 }
