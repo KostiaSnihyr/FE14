@@ -1,23 +1,36 @@
-function fibo(num) {
-    let arr = [0, 1];
-    let res = 0;
-
-    if(num === null) {
-        console.log('cancelled fibo')
-    } else if(num == 0 || num == 1) {
-        console.log(num);
-        fibo(prompt("what's your sign?"));
-    } else if(isNaN(num - 0)) {
-        console.log('type in number');
-        fibo(prompt("what's your sign?"));
-    } else {
-        while (arr.length < num) {
-            res = arr[arr.length - 1] + arr[arr.length - 2];
-            arr.push(res);
-        }
-        console.log(arr);
-        fibo(prompt("what's your sign?"));
-    }
+function * fibo (forward = true) {
+  forward = forward === undefined ? true : forward;
+  let a = [0, 1];
+  const step = (f, a) => f ? [a[1], a[0]+a[1]] : [a[1] - a[0], a[0]];
+  for(; true; ) {
+    const f = yield a[0];
+    forward = f === undefined ? forward : f;
+    a = step(forward, a);
+  }
 }
 
-fibo(prompt("what's your sign?"));
+var f = fibo(false);
+
+
+console.log(f.next(false));
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log('==============');
+console.log(f.next(true));
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log('==============');
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
+console.log(f.next());
