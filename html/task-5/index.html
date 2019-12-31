@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi Level Dropdown</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icons">
+                    <i class="icon ion-md-menu"></i>
+                    <i class="icon ion-md-close"></i>
+                </div>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-camera"></i>
+                </a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">Dropdown Menu
+                            <i class="icon ion-md-arrow-dropdown"></i>
+                        </a>
+                        <ul class="sub-menu first-sub-menu">
+                            <li>
+                                <a href="#">lvl-1</a>
+                            </li>
+                            <li>
+                                <a href="#">lvl-1
+                                    <i class="icon ion-md-arrow-dropdown"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">lvl-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">lvl-2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">lvl-2
+                                            <i class="icon ion-md-arrow-dropdown"></i>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="#">lvl-3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">lvl-3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">lvl-3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">lvl-1</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#services" data-link="menu">Services</a>
+                    </li>
+                    <li>
+                        <a href="#about" data-link="menu">About</a>
+                    </li>
+                    <li>
+                        <a href="#advantages" data-link="menu">Advantages</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" data-link="menu">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="container carousel-container">
+                <h2 class=section-header id="services">Services</h2>
+                <input type="radio" name="images" id="i1" checked>
+                <input type="radio" name="images" id="i2">
+                <input type="radio" name="images" id="i3">
+                <ul>
+                    <li class="slide slide-1">
+                        <article>
+                            <h4>Business headshots</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minus.</p>
+                        </article>
+                    </li>
+                    <li class="slide slide-2">
+                        <article>
+                            <h4>Product photography</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minus.</p>
+                        </article>
+                    </li>
+                    <li class="slide slide-3">
+                        <article>
+                            <h4>Event Photography</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, minus.</p>
+                        </article>
+                    </li>
+                    <li>
+                        <div class="carousel-nav">
+                            <label for="i1" class="dots" id="dot1"></label>
+                            <label for="i2" class="dots" id="dot2"></label>
+                            <label for="i3" class="dots" id="dot3"></label>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </section>
+        <section class="expert-team">
+            <h2 class=section-header id="about">About</h2>
+            <div class="container">
+                <div class="team-member">
+                    <img class="team-member__img" src="img/john-doe.jpeg" alt="John Doe">
+                    <div class="team-member__description">
+                        <h4 class="team-member__header">John Doe</h4>
+                        <p class="team-member__position">Photographer</p>
+                        <ul>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img class="team-member__img" src="img/john-doe.jpeg" alt="John Doe">
+                    <div class="team-member__description">
+                        <h4 class="team-member__header">John Doe</h4>
+                        <p class="team-member__position">Photographer</p>
+                        <ul>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img class="team-member__img" src="img/john-doe.jpeg" alt="John Doe">
+                    <div class="team-member__description">
+                        <h4 class="team-member__header">John Doe</h4>
+                        <p class="team-member__position">Photographer</p>
+                        <ul>
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img class="team-member__img" src="img/john-doe.jpeg" alt="John Doe">
+                    <div class="team-member__description">
+                        <h4 class="team-member__header">John Doe</h4>
+                        <p class="team-member__position">Photographer</p>
+                        <ul >
+                            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages" id="advantages">
+            <h2 class=section-header>Advantages</h2>
+            <div class="container">
+                <div class="advantage">
+                    <div class="advantage__img"><i class="fas fa-certificate"></i></div>
+                    <h4 class="advantage__header">Qualification</h4>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus aspernatur repudiandae tempore voluptatibus ullam quis quia debitis porro nulla atque, facilis veritatis rem numquam accusantium ratione minima aperiam ad!</p>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__img"><i class="fas fa-medal"></i></div>
+                    <h4 class="advantage__header">Reputation</h4>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus aspernatur repudiandae tempore voluptatibus ullam quis quia debitis porro nulla atque, facilis veritatis rem numquam accusantium ratione minima aperiam ad!</p>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__img"><i class="fas fa-tags"></i></div>
+                    <h4 class="advantage__header">Price</h4>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus aspernatur repudiandae tempore voluptatibus ullam quis quia debitis porro nulla atque, facilis veritatis rem numquam accusantium ratione minima aperiam ad!</p>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__img"><i class="fas fa-photo-video"></i></div>
+                    <h4 class="advantage__header">Equipment</h4>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus aspernatur repudiandae tempore voluptatibus ullam quis quia debitis porro nulla atque, facilis veritatis rem numquam accusantium ratione minima aperiam ad!</p>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__img"><i class="fas fa-user-friends"></i></div>
+                    <h4 class="advantage__header">Management</h4>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus aspernatur repudiandae tempore voluptatibus ullam quis quia debitis porro nulla atque, facilis veritatis rem numquam accusantium ratione minima aperiam ad!</p>
+                </div>
+                <div class="advantage">
+                    <div class="advantage__img"><i class="fas fa-horse"></i></div>
+                    <h4 class="advantage__header">Decorations</h4>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus aspernatur repudiandae tempore voluptatibus ullam quis quia debitis porro nulla atque, facilis veritatis rem numquam accusantium ratione minima aperiam ad!</p>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="section-header">Contacts</h2>
+                <address class="contact-details">
+                    <div class="contact-details__location">
+                        <a target="_blank" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9D%D0%B8%D0%B6%D0%BD%D0%B5%D1%8E%D1%80%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F,+31,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4664102,30.4980755,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4ce6de5b0624f:0x57f7d89a73e9b328!8m2!3d50.4664102!4d30.5002642"><i class="fas fa-home"></i>Nyzhnoiurkivska St, 31</a>
+                    </div>
+                    <div class="contact-details__mail">
+                        <a target="_blank" href="mailto:jim@rock.com"><i class="fas fa-mobile-alt"></i>jim@rock.com</a><br>
+                    </div>
+                    <div class="contact-details__phone">
+                        <a target="_blank" href="tel:+13115552368"><i class="fas fa-envelope"></i>(311) 555-2368</a>
+                    </div>
+                </address>
+                <div class="container">
+                    <div class="coordinates" style="width: 100%"><iframe width="100%" height="500" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=50.466564, 30.500297&amp;q=%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9D%D0%B8%D0%B6%D0%BD%D1%8C%D0%BE%D1%8E%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%2C%2031%2C%20%D0%9A%D0%B8%D1%97%D0%B2%2C%2002000+(photo%20studio%20location)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">latitude longitude finder</a></iframe></div><br />
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>©2019-2020</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
